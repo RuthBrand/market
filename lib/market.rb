@@ -31,11 +31,11 @@ class Market
     #enumerables everywhere
     stuff_to_sort = []
     @vendors.each do |vendor|
-      stuff_to_sort << vendor.values
+      stuff_to_sort << vendor.inventory.keys
     end
     final_sorted = stuff_to_sort.sort
     the_real_final_sorted = final_sorted.uniq
-    the_real_final_sorted
+    the_real_final_sorted.flatten.uniq
   end
 
 end
