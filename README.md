@@ -22,7 +22,7 @@ pry(main)> require './lib/vendor'
 pry(main)> vendor = Vendor.new("Rocky Mountain Fresh")
 #=> #<Vendor:0x00007f85683152f0...>
 
-pry(main)> vendor.name
+pry(main)> vendor.name 
 #=> "Rocky Mountain Fresh"
 
 pry(main)> vendor.inventory
