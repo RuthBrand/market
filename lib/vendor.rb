@@ -10,12 +10,11 @@ class Vendor
   end
 
   def check_stock(item)
-   @inventory["Peaches"]
+   @inventory[item]
   end
 
   def stock(item, amount)
-    @inventory["Peaches"] += amount
-    @inventory["Tomatoes"] += amount
+    @inventory[item] += amount
   end
 
 
