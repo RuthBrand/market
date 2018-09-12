@@ -6,15 +6,19 @@ class Vendor
   def initialize(vendor)
     @name = vendor
     @inventory = {}
-    @inventory.default = 0
   end
 
   def check_stock(item)
-    @inventory["item"]
+   @inventory.default = 0
+   @inventory.item
   end
 
   def stock(item, amount)
-    @inventory["item"] += amount
+    @inventory.item = amount
+  end
+
+  def put_stocked_into_inventory
+    @inventory
   end
 
 

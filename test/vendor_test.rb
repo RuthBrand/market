@@ -30,6 +30,7 @@ class VendorTest < Minitest::Test
   end
 
   def test_if_i_stock_more_than_one_item_the_inventory_holds_all_of_it
+    skip
     vendor = Vendor.new("Rocky Mountain Fresh")
     vendor.stock("Peaches", 30)
     vendor.stock("Peaches", 25)
