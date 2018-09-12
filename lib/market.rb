@@ -1,3 +1,4 @@
+require 'pry'
 class Market
 
   attr_reader :name,
@@ -20,7 +21,8 @@ class Market
 
   def vendors_that_sell(stuff)
     @vendors.keep_if do |vendor|
-      vendor.inventory[:key] == stuff
+      # binding.pry
+      vendor.inventory.keys.include?(stuff)
     end
   end
 

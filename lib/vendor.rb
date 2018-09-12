@@ -6,7 +6,6 @@ class Vendor
   def initialize(vendor)
     @name = vendor
     @inventory = Hash.new(0)
-    @stuff_in_stock = []
   end
 
   def check_stock(item)
