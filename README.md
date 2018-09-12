@@ -22,7 +22,7 @@ pry(main)> require './lib/vendor'
 pry(main)> vendor = Vendor.new("Rocky Mountain Fresh")
 #=> #<Vendor:0x00007f85683152f0...>
 
-pry(main)> vendor.name 
+pry(main)> vendor.name
 #=> "Rocky Mountain Fresh"
 
 pry(main)> vendor.inventory
@@ -32,6 +32,7 @@ pry(main)> vendor.check_stock("Peaches")
 #=> 0
 
 pry(main)> vendor.stock("Peaches", 30)
+#i want this to put these things in the inventory 
 
 pry(main)> vendor.check_stock("Peaches")
 #=> 30

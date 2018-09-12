@@ -5,21 +5,22 @@ class Vendor
 
   def initialize(vendor)
     @name = vendor
-    @inventory = {}
+    @inventory = Hash.new(0)
+    @stuff_in_stock = []
   end
 
   def check_stock(item)
-   @inventory.default = 0
-   @inventory.item
+   @inventory["Peaches"]
   end
 
   def stock(item, amount)
-    @inventory.item = amount
+    @inventory["Peaches"] += amount
+    @inventory["Tomatoes"] += amount
   end
 
-  def put_stocked_into_inventory
-    @inventory
-  end
+
+end
+
 
 
   # def stock(item, amount)
@@ -31,7 +32,3 @@ class Vendor
   #     {item => amount}
   #   end
   #  end
-
-
-
-end
